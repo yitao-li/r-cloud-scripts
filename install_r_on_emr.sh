@@ -8,6 +8,6 @@ sudo yum -y install gcc-gfortran libgfortran readline-devel libxml2-devel libcur
 wget "https://cran.r-project.org/src/base/R-4/${RVERSION}.tar.gz"
 tar xf "${RVERSION}.tar.gz"
 cd ${RVERSION}
-./configure --prefix=/usr --with-x=no
+./configure --prefix=/usr --with-x=no --enable-R-shlib
 make -j4
 sudo make install
